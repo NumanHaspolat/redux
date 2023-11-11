@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Counter from "./components/counter/Counter";
+import Todo from "./components/todo/Todo";
+import { Provider } from "react-redux";
+import { store } from "./redux";
 
 function App() {
+  // const store = createStore(counterReducer); //? icrisine bir reducer yazilmalidir.
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Store ile sarmalandi */}
+      <Provider store={store}>
+        <Counter />
+        <Todo />
+      </Provider>
     </div>
   );
 }

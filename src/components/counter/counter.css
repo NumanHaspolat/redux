@@ -1,0 +1,43 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  flex-direction: column;
+  user-select: none;
+}
+
+.pro {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.counter-btn {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-bottom: 2px solid black;
+  border-right: 1px solid black;
+  border-radius: 0.3rem;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.counter-btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+  transform: translateY(-2.5px);
+}
+
+.inc {
+  background-color: greenyellow;
+}
+
+.res {
+  background-color: aqua;
+}
+
+.dec {
+  background-color: red;
+  color: aliceblue;
+}
